@@ -1,5 +1,6 @@
 # coding=utf-8
 import urwid
+import os, random
 from scriptfille import *
 
 def question(line):
@@ -9,13 +10,14 @@ def dialogue(line):
     return urwid.Text(('I say', line + "\n"))
 
 class ConversationListBox(urwid.ListBox):
-    
-    scriptfille = ScriptFille()
+   
+    files = os.listdir('data/')
+    script = random.choice(files) 
+    scriptfille = ScriptFille(script)
 
     def __init__(self):
 
         #setup; scriptfille and take care of the first line
-        scriptfille = ScriptFille() 
         body = urwid.SimpleFocusListWalker([question(self.scriptfille.get_current_line())])
 
         super(ConversationListBox, self).__init__(body)
@@ -63,6 +65,3 @@ class ConversationListBox(urwid.ListBox):
 palette = [('I say', 'default,bold', 'default'),]
 urwid.MainLoop(ConversationListBox(), palette).run()
 
-# 'FIGRE HOW LINE . IS ENCODED!!!!!!!????????????????!!!!!!!!!!'
-# does not disp;lay lines that are .
-# detects when next line is .

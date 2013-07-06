@@ -1,14 +1,16 @@
-class ScriptFille():
+class ScriptFille:
 
-	def __init__(self):
+	def __init__(self, scriptname):
+		
+		self.scr = scriptname
+	
 		# read file to lines
-		with open('data/good morning script.mgmm') as f:  # TODO - either a given nae or rando fra file -- overloaded constrctor
+		with open('data/' + self.scr) as f: 
    			self.script = f.readlines()
 
    		# we start on the first line of the script
    		self.step = 0
-
-
+	
 	def get_current_line(self):
 
 		return self.script[self.step].split('\n')[0]
