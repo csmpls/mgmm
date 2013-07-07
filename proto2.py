@@ -18,7 +18,8 @@ class ConversationListBox(urwid.ListBox):
     def __init__(self):
 
         #setup; scriptfille and take care of the first line
-        body = urwid.SimpleFocusListWalker([question(self.scriptfille.get_current_line())])
+	q = self.scriptfille.get_current_line()
+        body = urwid.SimpleFocusListWalker([question(q)])
 
         super(ConversationListBox, self).__init__(body)
 
