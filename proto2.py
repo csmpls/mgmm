@@ -1,17 +1,17 @@
 # coding=utf-8
 import urwid
 import os, random
-from scriptfille import *
+from modules/scriptfille import * 
+#from modules/diary_manager import *
 
 def question(line):
     return urwid.Pile([urwid.Edit(('I say', line + "\n"))])
 
-def dialogue(line):
-    return urwid.Text(('I say', line + "\n"))
-
 class ConversationListBox(urwid.ListBox):
-   
-    files = os.listdir('data/')
+    
+    #diary = DiaryManager(self,'/home/user/diary.txt')
+ 
+    files = os.listdir('/home/user/Documents/gits/mgmm/data/')
     script = random.choice(files) 
     scriptfille = ScriptFille(script)
 
@@ -54,11 +54,11 @@ class ConversationListBox(urwid.ListBox):
         line = self.scriptfille.get_current_line()
         line = "\n" + line
 
-        if (self.scriptfille.current_line_is_question()):
-            self.body.insert(pos + 1, question(line))
-            self.focus_position = pos + 1
-        else:
-            self.focus.contents[1:] = [(dialogue(line), self.focus.options())]
+        #if (self.scriptfille.current_line_is_question()):
+        self.body.insert(pos + 1, question(line))
+        self.focus_position = pos + 1
+        #else:
+        #    self.focus.contents[1:] = [(dialogue(line), self.focus.options())]
 
 
 
