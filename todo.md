@@ -1,4 +1,4 @@
-get working with this compartmentalization scheme
+.
 either a bit of tmux scripting
 or a bit of writing a fun uriwd script (<<<<<)
 

@@ -1,7 +1,10 @@
 # coding=utf-8
 import urwid
 import os, random
-from modules/scriptfille import * 
+
+import sys
+sys.path.insert(0,'/home/user/Documents/mgmm/modules')
+from scriptfille import * 
 #from modules/diary_manager import *
 
 def question(line):
@@ -11,9 +14,7 @@ class ConversationListBox(urwid.ListBox):
     
     #diary = DiaryManager(self,'/home/user/diary.txt')
  
-    files = os.listdir('/home/user/Documents/gits/mgmm/data/')
-    script = random.choice(files) 
-    scriptfille = ScriptFille(script)
+    scriptfille = ScriptFille('/home/user/Documents/mgmm/conversation/data')
 
     def __init__(self):
 

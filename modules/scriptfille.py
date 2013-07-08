@@ -1,11 +1,14 @@
+import os, random
+
 class ScriptFille:
 
-	def __init__(self, scriptname):
-		
-		self.scr = scriptname
+	def __init__(self, scriptdir):
 	
+		files = os.listdir(scriptdir)
+		choice = random.choice(files)
+			
 		# read file to lines
-		with open('/home/user/Documents/gits/mgmm/data/' + self.scr) as f: 
+		with open(scriptdir + '/' + choice) as f: 
    			self.script = f.readlines()
 
    		# we start on the first line of the script
