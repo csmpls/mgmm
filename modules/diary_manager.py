@@ -1,3 +1,5 @@
+from datetime import datetime
+
 class DiaryManager:
 
 	def __init__(self, _diary_path):
@@ -6,12 +8,10 @@ class DiaryManager:
 
 		try:
 			f = open(self.diary_path, 'a')
-			f.write(self.get_entry_opener())
 			f.close()
 
 		except:
 			f = open(self.diary_path, 'w+')
-			f.write(self.get_entry_opener())
 			f.close()
 
 	def add_machine_line(self, line):
@@ -22,8 +22,8 @@ class DiaryManager:
 		with open (self.diary_path, 'a') as f:
 			f.write(line + '\n\n\n')	
 
-	def get_entry_opener(self):
-		return '\n\n#New entry\n\n'
-
 	def get_complete_diary_path(self, _diary_path):
-		return _diary_path #+ get_timestamp()
+		return _diary_path + self.get_timestamp() + '.md'
+
+	def get_timestamp(self):
+		return str(datetime.now()).split(' ')[0]
