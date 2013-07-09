@@ -6,6 +6,6 @@ or a bit of writing a fun uriwd script (<<<<<)
 
 
 later...
-	adiary
+	a diary
 	variety
 	color...etc	
