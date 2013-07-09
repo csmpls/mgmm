@@ -12,7 +12,8 @@ from ConversationListBox import *
 #from modules/diary_manager import *
 
 
+diary_path = '/home/user/Documents/mgmm/diary.txt'
 
 palette = [('I say', 'default,bold', 'default'),]
-urwid.MainLoop(ConversationListBox(), palette).run()
+urwid.MainLoop(ConversationListBox(diary_path), palette).run()
 
