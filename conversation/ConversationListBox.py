@@ -4,7 +4,7 @@ from scriptfille import *
 from diary_manager import *
 
 def question(line):
-    return urwid.Pile([urwid.Edit(('I say', line + "\n"))])
+    return urwid.Pile([urwid.Edit(('machine line', line + "\n"))])
 
 
 class ConversationListBox(urwid.ListBox):
@@ -33,7 +33,8 @@ class ConversationListBox(urwid.ListBox):
         if self.scriptfille.get_current_line() is '.':
             self.advance_or_quit_script()
 
-
+	#if self.scriptfille.get_current_line() is '[clear]':
+	#    self.advance_or_quit_script()
 
     def keypress(self, size, key):
         

@@ -1,6 +1,6 @@
 .
-a bit of writing a fun uriwd script (<<<<<)
-remember.... expand slowly!!!!
+a bit of time writing a fun uriwd script (<<<<<)
+but remember.... expand slowly!!!!
 
 
 

@@ -14,6 +14,6 @@ from ConversationListBox import *
 script_path = '/home/user/Documents/mgmm/script.mgmm'
 diary_path = '/home/user/Documents/mgmm/diary/'
 
-palette = [('I say', 'dark cyan,bold', 'default'),]
+palette = [('machine line', 'dark cyan,bold', 'default'),]
 urwid.MainLoop(ConversationListBox(script_path, diary_path), palette).run()
 
