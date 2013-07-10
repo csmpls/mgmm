@@ -1,11 +1,10 @@
 .
-either a bit of tmux scripting
-or a bit of writing a fun uriwd script (<<<<<)
-
+a bit of writing a fun uriwd script (<<<<<)
+remember.... expand slowly!!!!
 
 
 
 later...
-	a diary
+	.a diary
 	variety
 	color...etc	

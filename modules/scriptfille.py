@@ -4,11 +4,11 @@ class ScriptFille:
 
 	def __init__(self, scriptdir):
 	
-		files = os.listdir(scriptdir)
-		choice = random.choice(files)
+		#files = os.listdir(scriptdir)
+		#choice = random.choice(files)
 			
 		# read file to lines
-		with open(scriptdir + '/' + choice) as f: 
+		with open(scriptdir) as f: 
    			self.script = f.readlines()
 
    		# we start on the first line of the script

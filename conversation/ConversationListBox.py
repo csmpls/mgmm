@@ -6,15 +6,16 @@ from diary_manager import *
 def question(line):
     return urwid.Pile([urwid.Edit(('I say', line + "\n"))])
 
-class ConversationListBox(urwid.ListBox):
-    
- 
-    scriptfille = ScriptFille('/home/user/Documents/mgmm/conversation/data')
 
-    def __init__(self, diary_path):
+class ConversationListBox(urwid.ListBox):
+
+    def __init__(self, script_path, diary_path):
 
         # set up the diary
         self.diary = DiaryManager(diary_path)
+	
+	#find the script
+	self.scriptfille = ScriptFille(script_path)
 
         #set up scriptfille and take care of the first line
         q = self.scriptfille.get_current_line()
