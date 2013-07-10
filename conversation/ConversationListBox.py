@@ -33,8 +33,9 @@ class ConversationListBox(urwid.ListBox):
         if self.scriptfille.get_current_line() is '.':
             self.advance_or_quit_script()
 
-	#if self.scriptfille.get_current_line() is '[clear]':
-	#    self.advance_or_quit_script()
+	if '[clear]' in self.scriptfille.get_current_line():
+	    #subprocess.Popen('clear')  
+	    self.advance_or_quit_script()
 
     def keypress(self, size, key):
         
@@ -58,8 +59,6 @@ class ConversationListBox(urwid.ListBox):
         # add this line of dialogue to our diary
         self.diary.add_machine_line(line)
 
-        #if (self.scriptfille.current_line_is_question()):
+	# add the next question and move cursor focus
         self.body.insert(pos + 1, question('\n' + line))
         self.focus_position = pos + 1
-        #else:
-        #    self.focus.contents[1:] = [(dialogue(line), self.focus.options())]

@@ -3,6 +3,7 @@ what's the #1 thing you want different about MGMM?
 .
 what's the #2 next best thing you want different about MGMM?
 .
+[clear]
 what's the #1 thing you want different about this day, versus what it's going to be?
 .
 list the things you were planning on getting done or doing today:
@@ -29,10 +30,10 @@ which one do you think you're probably gonna do first?
 remember next steps on mgmm.
 i know i know, the mantras system shoots to mind.
 or is it the auto-multiplexed terminal? 
-but first steps might be making a [clearscreen] command in our scripts
+but first steps might be making a [clear] command in our scripts
 for dramatic pauses.
 you probably want to distinguish text with color somehow. i'm not sure how urgent you feel that is.
-[clearscreen]
+[clear]
 what's something that really oughta get done today?
 .
 what's the other thing that really oughta get done today?
@@ -41,7 +42,7 @@ when are they gonna get done?
 .
 what's gonna happen after that?
 .
-[clearscreen]
+[clear]
 what might be your motivation for learning cryptography?
 .
 what might be your motivation for learning how to make, or use, a mesh network?
@@ -59,7 +60,7 @@ what might be your motivation for staying away from any kind of berkeley-ish wor
 .
 what might be your motivation for making music, drone music, etc?
 .
-[clearscreen]
+[clear]
 what's something you'd REAALLY like to be able to do?
 .
 how long do you think it'd take you to learn how to do it?
@@ -90,7 +91,7 @@ and what about these "cool skills" - 1337 skills - things like vim or knowing ho
 .
 obviously all of these are great projects, but which one is best to do NOW, //this// summer? scroll up... think carefully...
 .
-[......clearscreen.....]
+[......clear.....]
 ...
 ...
 ...
