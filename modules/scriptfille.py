@@ -1,4 +1,4 @@
-import os, random
+import os, random, re
 
 class ScriptFille:
 
@@ -9,11 +9,19 @@ class ScriptFille:
 			
 		# read file to lines
 		with open(scriptdir) as f: 
-   			self.script = f.readlines()
+			lines = f.readlines()
+   			self.script = self.remove_whitespace(lines)
 
    		# we start on the first line of the script
    		self.step = 0
-	
+
+	def remove_whitespace(self, lines):
+		cleaned = []
+		for line in lines:
+			if re.match("[a-zA-Z0-9.]", line):
+				cleaned.append(line)
+		return cleaned
+
 	def get_current_line(self):
 
 		return self.script[self.step].split('\n')[0]
