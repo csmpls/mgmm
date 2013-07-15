@@ -4,7 +4,7 @@ import os, subprocess, tempfile
 class FileOpener:
 
 	def get_yesterday_date(self, today):
-		return today-timedelta(days=3)	
+		return today-timedelta(days=1)	
 
 	def get_diary_filename(self, date):
 		datestr = str(date).split(' ')[0]
