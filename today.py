@@ -4,5 +4,5 @@ from file_opener import *
 
 
 fo = FileOpener()
-fo.open_yesterdays_diary()
+fo.open_todays_diary()
 
