@@ -4,7 +4,17 @@ but remember.... expand slowly!!!!
 
 
 
-later...
-	.a diary
-	variety
-	color...etc	
+	fullscreen urwid
+	[wisdom] tag
+
+
+
+
+
+		
+
+	* ?./ etc is NOT whitespace
+
+	* clearscreen
+
+	* yesterday.py opens recursively on 404

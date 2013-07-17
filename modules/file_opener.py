@@ -26,7 +26,7 @@ class FileOpener:
 		fp.close()
 
 		#open tempfile in vi
-		editor = os.getenv('EDITOR', 'vi')
+		editor = os.getenv('EDITOR', 'vim')
 		print(editor, path)
 		subprocess.call('%s %s' % (editor, path), shell=True)
 
