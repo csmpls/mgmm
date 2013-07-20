@@ -5,7 +5,7 @@ from mgmm.modules import decko
 
 
 
-deck = decko.Deck('tarot.md')
+deck = decko.Deck('tarots.md')
 shown_str = deck.get_card().get_side()
 
 
