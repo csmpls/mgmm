@@ -468,7 +468,7 @@ Initiative and an individual approach secure success.  A strong position is main
 
 NINE OF WANDS
 Great strength.  Power.  Health.  Recovery from sickness.
-Tremendous and steady force that cannot beshaken.  Herculean strngth, yet sometimes scientifically applied.  Great success, but with strife and energy.  Victory preceeded by apprehension and fear.  Health good, and recovery, yet doubt.  Generous, questioning and curious, fond of external appearance, intractable, obstinate.
+Tremendous and steady force that cannot beshaken.  Herculean strength, yet sometimes scientifically applied.  Great success, but with strife and energy.  Victory preceeded by apprehension and fear.  Health good, and recovery, yet doubt.  Generous, questioning and curious, fond of external appearance, intractable, obstinate.
 Loss of friendship.
 An acute problem.
 Love overcomes difficulties.
@@ -503,4 +503,3 @@ KING OF WANDS
 A blond or red-haired man with blue or hazel eyes.  Active, generous, firce, sudden and impetuous.  If ill-dignified, he is evil-minded, cruel, bigoted, brutal.
 His Majesty sits upon his horse in a somewhat informal pose, giving the impression that he is restless and has little time to spare.
 He is noble, honest and conscientious but his emotions are easily inflamed, so while he may be a wise, mature father figure, he may also be short-tempered on occasion.  He is usually married.  His faults are a tendancy to be austere, to exaggerate and be too dogmatic.
-

@@ -38,9 +38,11 @@ palette = [
 
 #setup
 placeholder = urwid.SolidFill()
+
 loop = urwid.MainLoop(placeholder, palette, unhandled_input=exit_on_q)
 loop.screen.set_terminal_properties(colors=256)
 loop.widget = urwid.AttrMap(placeholder, 'bg')
+
 loop.widget.original_widget = urwid.Filler(urwid.Pile([]))
 
 # setup the attributes
@@ -49,10 +51,11 @@ outside = urwid.AttrMap(div, 'outside')
 inside = urwid.AttrMap(div, 'inside')
 txt = urwid.Text(('banner', shown_str), align='center')
 streak = urwid.AttrMap(txt, 'streak')
+main = urwid.Padding(streak, left=19, right=19)
 
 # add the attributes to a pile
 pile = loop.widget.base_widget # .base_widget skips the decorations
-for item in [outside, inside, streak, inside, outside]:
+for item in [outside, inside, main, inside, outside]:
     pile.contents.append((item, pile.options()))
 
 loop.run()

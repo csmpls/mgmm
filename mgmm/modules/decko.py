@@ -22,7 +22,7 @@ class Deck:
 
 		string=''
 		for line in lines:
-			if re.match("[a-zA-Z0-9.]", line):
+			if re.match("[a-zA-Z0-9.()]", line):
 				string+=line
 			else:
 				strings.append(string)
