@@ -1,8 +1,7 @@
 from sys import path
-path.insert(0,'/home/user/Documents/mgmm/modules')
-from file_opener import * 
+from mgmm.modules import file_opener 
 
 
-fo = FileOpener()
+fo = file_opener.FileOpener()
 fo.open_yesterdays_diary()
 

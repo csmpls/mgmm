@@ -1,12 +1,11 @@
 import sys, urwid
-sys.path.insert(0,'../modules')
-from decko import *
+from mgmm.modules import decko 
 
 
 
 
 
-deck = Deck('tarot.md')
+deck = decko.Deck('tarot.md')
 shown_str = deck.get_card().get_side()
 
 
