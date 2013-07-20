@@ -3,8 +3,6 @@ from mgmm.modules import decko
 
 
 
-
-
 deck = decko.Deck('tarots.md')
 shown_str = deck.get_card().get_side()
 
@@ -51,6 +49,8 @@ outside = urwid.AttrMap(div, 'outside')
 inside = urwid.AttrMap(div, 'inside')
 txt = urwid.Text(('banner', shown_str), align='center')
 streak = urwid.AttrMap(txt, 'streak')
+
+#controversial padding component
 main = urwid.Padding(streak, left=19, right=19)
 
 # add the attributes to a pile
