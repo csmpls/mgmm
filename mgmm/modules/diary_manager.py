@@ -22,6 +22,10 @@ class DiaryManager:
 		with open (self.diary_path, 'a') as f:
 			f.write(line + '\n\n\n')	
 
+	def add_header(self, line):
+		with open (self.diary_path, 'a') as f:
+			f.write('\n\n\n#' + line)
+
 	def get_complete_diary_path(self, _diary_path):
 		return _diary_path + self.get_timestamp() + '.md'
 
