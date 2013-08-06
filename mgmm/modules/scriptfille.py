@@ -18,7 +18,7 @@ class ScriptFille:
 	def remove_whitespace(self, lines):
 		cleaned = []
 		for line in lines:
-			if re.match("[a-zA-Z0-9.?()]", line):
+			if re.match("[a-zA-Z0-9.?\"\'*()]", line):
 				cleaned.append(line)
 		return cleaned
 

@@ -5,13 +5,13 @@ import subprocess
 from mgmm.conversation import ConversationListBox 
 from mgmm.modules import diary_manager
 
-script_path = 'evening.mgmm'
+script_path = 'lucid.mgmm' 
 diary_path = 'diary/'
 
 dm = diary_manager.DiaryManager(diary_path)
-dm.add_header('evening')
+dm.add_header('preparing for a lucid dream')
 
-palette = [('machine line', 'dark red,bold', 'default'),]
+palette = [('machine line', 'dark green,bold', 'default'),]
 urwid.MainLoop(ConversationListBox.ConversationListBox(script_path, diary_path), palette).run()
 
 #clear terminal screen after quit
